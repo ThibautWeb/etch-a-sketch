@@ -4,15 +4,19 @@
   box-sizing: border-box;
 }
 .container {
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+  height: 50vh;
+  border: 1px solid black;
 }
 .container div {
   display: flex;
+  flex-direction: row;
+  flex: 1 0 auto;
 }
 .container div div {
-  flex: 0 0 auto;
-  width: 30px;
-  height: 30px;
-  border: 1px solid red;
+  flex: 1 0 auto;
 }
 
 .hovered {
